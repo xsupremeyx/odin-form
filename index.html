@@ -7,12 +7,14 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="container">
+
     <div class="sidebar">
         <div class="logo-holder">
             <img src="./img/odin-lined.png" alt="Odin Logo" class="logo">
             <div class="logo-name">ODIN</div>
         </div>
-        <p>Photo by <a href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA">Halie West</a> on <a href="https://unsplash.com/">Unsplash</a></p>
+        <p class="credits">Photo by <a href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA">Halie West</a> on <a href="https://unsplash.com/">Unsplash</a></p>
     </div>
 
     <div class="main">
@@ -29,19 +31,40 @@
 
         </div>
         <div class="form">
-            
             <form action="" method="post">
                 <section class="main-form">
-                    <h1>Let's Do this!</h1>
-                    <label for="first-name">FIRST NAME</label>
-                    <input type="text" id="first-name" name="firstname" required>
-                    <label for="last-name">LAST NAME</label>
-                    <input type="text" id="last-name" name="lastname" required>
-                    <label for="email">EMAIL</label>
-                    <input type="email" id="email" name="email" required placeholder="xyz@abc.com">
-                    <label for="password">PASSWORD</label>
-                    <input type="password" id="password" name="password" required>
-                    <input type="password" id="confirm-password" name="cnfmpassword" placeholder="Confirm-Password" required>
+                    <h1 class="row 1">Let's Do this!</h1>
+                    <div class="row 2">
+                        <div class="inputholder">
+                            <label for="first-name">FIRST NAME</label>
+                            <input type="text" id="first-name" name="firstname" required>
+                        </div>
+                        <div class="inputholder">
+                            <label for="last-name">LAST NAME</label>
+                            <input type="text" id="last-name" name="lastname" required>
+                        </div>
+                    </div>
+                    <div class="row 3">
+                        <div class="inputholder">
+                            <label for="email">EMAIL</label>
+                            <input type="email" id="email" name="email" required placeholder="xyz@abc.com">
+                        </div>
+                        <div class="inputholder">
+                            <label for="phone">PHONE</label>
+                            <input type="tel" id="phone" name="phone" required placeholder="+123-456-7890">
+                        </div>
+                    </div>
+                    
+                    <div class="row 4">
+                        <div class="inputholder">
+                            <label for="password">PASSWORD</label>
+                            <input type="password" id="password" name="password" required>
+                        </div>
+                        <div class="inputholder">
+                            <label for="password">CONFIRM PASSWORD</label>
+                            <input type="password" id="confirm-password" name="cnfmpassword" placeholder="Confirm-Password" required>
+                        </div>
+                    </div>
                 </section>
                 <section class="output-form">
                     <button class="create-acc" type="submit">Create Account</button>
@@ -53,6 +76,6 @@
         </div>
 
     </div>
-
+    </div>
 </body>
 </html>
