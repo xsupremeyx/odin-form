@@ -158,7 +158,9 @@ body {
     justify-content: center;
     align-items: flex-start;
     width: 72vw;
-    padding: 40px 35px;
+    padding-left: 35px;
+    padding-top: 25px;
+    padding-bottom: 40px;
 }
 
 h1{
@@ -187,7 +189,12 @@ h1{
 
 input{
     width: 250px;
-    background-color: whitesmoke;
+    background-color: #F5F5F5;
+    border: 1px solid #E5E7EB;
+    border-radius: 5px;
+    padding: 4px 12px;
+    font-size: 1rem;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 label{
@@ -217,4 +224,24 @@ button{
 .output-form p a{
     color: #596D48;
     text-decoration: none;
+}
+
+input:focus{
+    outline: blue auto 1px;
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+}
+
+button:hover{
+    background-color: #455634;
+    cursor: pointer;
+}
+
+input::placeholder{
+    color: gray;
+    font-style: italic;
+}
+
+input:user-invalid{
+    border: 1px solid red;
+    box-shadow: 0 0 5px rgba(255, 0, 0, 1);
 }
